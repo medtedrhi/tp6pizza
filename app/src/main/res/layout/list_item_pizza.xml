@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  This layout defines a single row in our pizza list.
+  It uses a horizontal LinearLayout to place an image next to pizza details.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!-- ImageView for the pizza's picture -->
+    <ImageView
+        android:id="@+id/pizzaImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/pizza_image_description" />
+
+    <!-- A vertical LinearLayout to hold the pizza's textual details -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="8dp">
+
+        <!-- TextView for the pizza's name -->
+        <TextView
+            android:id="@+id/pizzaNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- TextView for the pizza's preparation duration -->
+        <TextView
+            android:id="@+id/pizzaDurationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp" />
+
+        <!-- TextView for the pizza's price -->
+        <TextView
+            android:id="@+id/pizzaPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
